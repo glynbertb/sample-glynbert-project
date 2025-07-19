@@ -12,7 +12,7 @@ console.log('Goodbye!');
 console.log("End of script.");
 
 function greet(name) {
-    console.log(`Hello, ${name}!`);
+    console.log(`Hello world, ${name}!`);
 }
 
 greet('Glynbert')
