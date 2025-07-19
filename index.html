@@ -6,10 +6,19 @@ Each section below is explained for beginners.
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- The <head> contains information about the page, like its title and links to stylesheets -->
+    <!-- SEO Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divine Jesus Church</title>
+    <title>Divine Jesus Church | Bible-based Christian Community in Hometown, USA</title>
+    <meta name="description" content="Divine Jesus Church is a Bible-based Christian community in Hometown, USA. Join us for worship, Bible study, ministries, and prayer. All are welcome!">
+    <meta name="keywords" content="Divine Jesus Church, Christian Church, Bible, Worship, Ministries, Prayer, Hometown, USA, Faith, Jesus, Community, Doctrines">
+    <meta name="author" content="Divine Jesus Church">
+    <meta property="og:title" content="Divine Jesus Church | Bible-based Christian Community" />
+    <meta property="og:description" content="Join Divine Jesus Church for worship, Bible study, ministries, and prayer. All are welcome!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://divinejesuschurch.org/" />
+    <meta property="og:image" content="logo.svg" />
+    <link rel="canonical" href="https://divinejesuschurch.org/" />
     <link rel="stylesheet" href="style.css"> <!-- Connects to your CSS file for styling -->
 </head>
 <body>
@@ -105,5 +114,34 @@ Each section below is explained for beginners.
     </footer>
     <!-- This script adds interactivity to your site -->
     <script src="script.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Divine Jesus Church",
+      "alternateName": "Divine Jesus Church Hometown",
+      "url": "https://divinejesuschurch.org/",
+      "logo": "https://divinejesuschurch.org/logo.svg",
+      "description": "Divine Jesus Church is a Bible-based Christian community in Hometown, USA. Join us for worship, Bible study, ministries, and prayer. All are welcome!",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Faith Lane",
+        "addressLocality": "Hometown",
+        "addressRegion": "USA",
+        "postalCode": "",
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-123-456-7890",
+        "contactType": "customer service",
+        "email": "info@divinejesuschurch.org"
+      },
+      "sameAs": [
+        "https://www.facebook.com/divinejesuschurch",
+        "https://www.instagram.com/divinejesuschurch"
+      ]
+    }
+    </script>
 </body>
 </html>
