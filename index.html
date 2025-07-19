@@ -1,0 +1,104 @@
+<!--
+This is the main HTML file for your church website.
+HTML (HyperText Markup Language) is used to structure the content of your web page.
+Each section below is explained for beginners.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- The <head> contains information about the page, like its title and links to stylesheets -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divine Jesus Church</title>
+    <link rel="stylesheet" href="style.css"> <!-- Connects to your CSS file for styling -->
+</head>
+<body>
+    <!-- The header is the top part of your website, with the church name and navigation menu -->
+    <header>
+        <h1>Divine Jesus Church</h1>
+        <nav>
+            <!-- These links let users jump to different sections of the page -->
+            <a href="#about" class="menu-link">About</a>
+            <a href="#services" class="menu-link">Services</a>
+            <a href="#doctrines" class="menu-link">Doctrines</a>
+            <a href="#ministries" class="menu-link">Ministries</a>
+            <a href="#prayer" class="menu-link">Prayer Request</a>
+            <a href="#contact" class="menu-link">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <!-- This section shows a random Bible verse and an insight -->
+        <section id="verse-section">
+            <h2>Verse of the Day</h2>
+            <div id="verse-box">
+                <p id="verse-reference"></p>
+                <blockquote id="verse-text"></blockquote>
+                <p id="verse-insight"></p>
+                <button onclick="showRandomBibleVerse()">Show Another Verse</button>
+            </div>
+        </section>
+        <!-- About section describes your church -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Divine Jesus Church is a welcoming family of believers dedicated to sharing God’s love and serving our community. Join us as we worship, grow, and serve together.</p>
+        </section>
+        <!-- Service times for your church -->
+        <section id="services">
+            <h2>Service Times</h2>
+            <ul>
+                <li>Sunday Worship: 10:00 AM</li>
+                <li>Wednesday Bible Study: 7:00 PM</li>
+                <li>Youth Fellowship: Friday 6:00 PM</li>
+            </ul>
+        </section>
+        <!-- Doctrines section lists your church's beliefs -->
+        <section id="doctrines">
+            <h2>Our Doctrines</h2>
+            <ul>
+                <li>The Bible is the inspired Word of God.</li>
+                <li>Salvation is by grace through faith in Jesus Christ.</li>
+                <li>The Trinity: Father, Son, and Holy Spirit.</li>
+                <li>Jesus Christ is fully God and fully man.</li>
+                <li>The Church is the body of Christ, called to worship, fellowship, and serve.</li>
+                <li>Believer’s baptism and the Lord’s Supper are ordinances of the church.</li>
+                <li>We await the return of Jesus Christ.</li>
+            </ul>
+        </section>
+        <!-- Ministries section lists church groups and activities -->
+        <section id="ministries">
+            <h2>Our Ministries</h2>
+            <ul>
+                <li>Children’s Ministry</li>
+                <li>Youth Ministry</li>
+                <li>Music & Worship Team</li>
+                <li>Community Outreach</li>
+                <li>Prayer Group</li>
+            </ul>
+        </section>
+        <!-- Prayer request form lets visitors send prayer requests -->
+        <section id="prayer">
+            <h2>Prayer Request</h2>
+            <form id="prayer-form">
+                <input type="text" id="prayer-name" placeholder="Your Name" required />
+                <input type="email" id="prayer-email" placeholder="Your Email" required />
+                <textarea id="prayer-message" placeholder="Your Prayer Request" required></textarea>
+                <button type="submit">Send Prayer Request</button>
+                <p id="prayer-success" style="display:none;color:green;">Thank you for your prayer request!</p>
+            </form>
+        </section>
+        <!-- Contact section with email, phone, and address -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@divinejesuschurch.org</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Faith Lane, Hometown, USA</p>
+        </section>
+    </main>
+    <!-- Footer is at the bottom of the page -->
+    <footer>
+        <p>&copy; 2025 Divine Jesus Church. All rights reserved.</p>
+    </footer>
+    <!-- This script adds interactivity to your site -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+/*
+This is the main CSS file for your church website.
+CSS (Cascading Style Sheets) is used to style and layout web pages.
+Each section below styles a different part of your website.
+*/
+
+body {
+    /* Sets the main font for the website and a nice background gradient color */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    margin: 0; /* Removes default browser margin */
+    color: #222; /* Sets the default text color to dark gray */
+}
+header {
+    /* Styles the top header bar */
+    background: #3a6ea5; /* Blue background */
+    color: #fff; /* White text */
+    padding: 2rem 1rem 1rem 1rem; /* Space inside the header */
+    text-align: center; /* Center the text */
+    box-shadow: 0 2px 8px rgba(58,110,165,0.1); /* Adds a soft shadow */
+}
+header h1 {
+    /* Styles the main title in the header */
+    margin: 0 0 0.5rem 0;
+    font-size: 2.5rem; /* Makes the title big */
+    letter-spacing: 2px; /* Adds space between letters */
+}
+nav a {
+    /* Styles the navigation menu links */
+    color: #fff; /* White text */
+    margin: 0 1rem; /* Space between links */
+    text-decoration: none; /* Removes underline */
+    font-weight: 500; /* Makes text a bit bolder */
+    transition: color 0.2s; /* Smooth color change on hover */
+}
+nav a:hover {
+    /* Changes link color when you hover your mouse */
+    color: #ffe082; /* Light yellow */
+}
+.menu-link.active {
+    /* Highlights the menu link for the section you are viewing */
+    color: #ffe082;
+    border-bottom: 2px solid #ffe082; /* Adds a yellow underline */
+}
+main {
+    /* Styles the main content area */
+    max-width: 800px; /* Limits how wide the content can be */
+    margin: 2rem auto; /* Centers the content on the page */
+    background: #fff; /* White background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 24px rgba(58,110,165,0.08); /* Soft shadow */
+    padding: 2rem; /* Space inside the main area */
+}
+#verse-section {
+    /* Styles the Verse of the Day section */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#verse-box {
+    /* Styles the box that shows the Bible verse */
+    background: #f5faff; /* Light blue background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 1.5rem; /* Space inside the box */
+    box-shadow: 0 2px 8px rgba(58,110,165,0.07); /* Soft shadow */
+    margin: 1rem auto;
+    max-width: 500px; /* Limits the width */
+}
+#verse-reference {
+    /* Styles the Bible verse reference (e.g., John 3:16) */
+    font-weight: bold;
+    color: #3a6ea5; /* Blue color */
+    font-size: 1.2rem;
+}
+#verse-text {
+    /* Styles the actual Bible verse text */
+    font-style: italic;
+    margin: 1rem 0;
+    color: #222;
+}
+#verse-insight {
+    /* Styles the insight/explanation for the verse */
+    color: #4e6e5d; /* Greenish color */
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+button {
+    /* Styles all buttons */
+    background: #3a6ea5; /* Blue background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 6px; /* Rounded corners */
+    padding: 0.5rem 1.5rem; /* Space inside the button */
+    font-size: 1rem;
+    cursor: pointer; /* Shows pointer on hover */
+    transition: background 0.2s; /* Smooth color change */
+}
+button:hover {
+    /* Button color when you hover */
+    background: #27496d;
+}
+section {
+    /* Adds space below each section */
+    margin-bottom: 2.5rem;
+}
+#ministries ul, #doctrines ul {
+    /* Styles the lists in Ministries and Doctrines sections */
+    list-style: disc inside;
+    margin-left: 1rem;
+}
+#prayer-form {
+    /* Styles the prayer request form */
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem; /* Space between form fields */
+    max-width: 400px;
+    margin: 0 auto;
+}
+#prayer-form input, #prayer-form textarea {
+    /* Styles the input fields and textarea in the form */
+    padding: 0.6rem;
+    border-radius: 5px;
+    border: 1px solid #b0c4de;
+    font-size: 1rem;
+    resize: none;
+}
+#prayer-form button {
+    /* Styles the submit button in the prayer form */
+    background: #3a6ea5;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#prayer-form button:hover {
+    background: #27496d;
+}
+#prayer-success {
+    /* Styles the success message after submitting a prayer request */
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+footer {
+    /* Styles the footer at the bottom of the page */
+    text-align: center;
+    padding: 1rem;
+    background: #3a6ea5;
+    color: #fff;
+    border-radius: 0 0 12px 12px;
+    margin-top: 2rem;
+}
