@@ -5,19 +5,19 @@ Each section below styles a different part of your website.
 */
 
 body {
-    /* Sets the main font for the website and a nice background gradient color */
+    /* Sets the main font for the website and a blue gradient background */
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
-    margin: 0; /* Removes default browser margin */
-    color: #222; /* Sets the default text color to dark gray */
+    background: linear-gradient(135deg, #3a6ea5 0%, #27496d 100%); /* Blue gradient */
+    margin: 0;
+    color: #fff; /* White text for contrast on blue */
 }
 header {
     /* Styles the top header bar */
-    background: #3a6ea5; /* Blue background */
-    color: #fff; /* White text */
-    padding: 2rem 1rem 1rem 1rem; /* Space inside the header */
-    text-align: center; /* Center the text */
-    box-shadow: 0 2px 8px rgba(58,110,165,0.1); /* Adds a soft shadow */
+    background: #27496d; /* Darker blue background */
+    color: #fff;
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(39,73,109,0.2);
 }
 header h1 {
     /* Styles the main title in the header */
@@ -35,21 +35,22 @@ nav a {
 }
 nav a:hover {
     /* Changes link color when you hover your mouse */
-    color: #ffe082; /* Light yellow */
+    color: #90caf9; /* Lighter blue on hover */
 }
 .menu-link.active {
     /* Highlights the menu link for the section you are viewing */
-    color: #ffe082;
-    border-bottom: 2px solid #ffe082; /* Adds a yellow underline */
+    color: #90caf9;
+    border-bottom: 2px solid #90caf9; /* Adds a blue underline */
 }
 main {
     /* Styles the main content area */
     max-width: 800px; /* Limits how wide the content can be */
     margin: 2rem auto; /* Centers the content on the page */
-    background: #fff; /* White background */
+    background: #1e3557; /* Deep blue background */
     border-radius: 12px; /* Rounded corners */
-    box-shadow: 0 4px 24px rgba(58,110,165,0.08); /* Soft shadow */
+    box-shadow: 0 4px 24px rgba(39,73,109,0.15); /* Soft shadow */
     padding: 2rem; /* Space inside the main area */
+    color: #fff;
 }
 #verse-section {
     /* Styles the Verse of the Day section */
@@ -58,28 +59,28 @@ main {
 }
 #verse-box {
     /* Styles the box that shows the Bible verse */
-    background: #f5faff; /* Light blue background */
+    background: #596d27; /* Darker blue background */
     border-radius: 10px; /* Rounded corners */
     padding: 1.5rem; /* Space inside the box */
-    box-shadow: 0 2px 8px rgba(58,110,165,0.07); /* Soft shadow */
+    box-shadow: 0 2px 8px rgba(39,73,109,0.12); /* Soft shadow */
     margin: 1rem auto;
     max-width: 500px; /* Limits the width */
 }
 #verse-reference {
     /* Styles the Bible verse reference (e.g., John 3:16) */
     font-weight: bold;
-    color: #3a6ea5; /* Blue color */
+    color: #90caf9; /* Light blue color */
     font-size: 1.2rem;
 }
 #verse-text {
     /* Styles the actual Bible verse text */
     font-style: italic;
     margin: 1rem 0;
-    color: #222;
+    color: #fff;
 }
 #verse-insight {
     /* Styles the insight/explanation for the verse */
-    color: #4e6e5d; /* Greenish color */
+    color: #b3e5fc; /* Very light blue color */
     font-size: 1rem;
     margin-bottom: 1rem;
 }
@@ -96,7 +97,7 @@ button {
 }
 button:hover {
     /* Button color when you hover */
-    background: #27496d;
+    background: #1565c0;
 }
 section {
     /* Adds space below each section */
@@ -119,9 +120,14 @@ section {
     /* Styles the input fields and textarea in the form */
     padding: 0.6rem;
     border-radius: 5px;
-    border: 1px solid #b0c4de;
+    border: 1px solid #90caf9;
     font-size: 1rem;
+    background: #1e3557;
+    color: #fff;
     resize: none;
+}
+#prayer-form input::placeholder, #prayer-form textarea::placeholder {
+    color: #b3e5fc;
 }
 #prayer-form button {
     /* Styles the submit button in the prayer form */
@@ -135,19 +141,86 @@ section {
     transition: background 0.2s;
 }
 #prayer-form button:hover {
-    background: #27496d;
+    background: #1565c0;
 }
 #prayer-success {
     /* Styles the success message after submitting a prayer request */
     margin-top: 0.5rem;
     font-weight: bold;
+    color: #90caf9;
 }
 footer {
     /* Styles the footer at the bottom of the page */
     text-align: center;
     padding: 1rem;
-    background: #3a6ea5;
+    background: #27496d;
     color: #fff;
     border-radius: 0 0 12px 12px;
     margin-top: 2rem;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+    body {
+        font-size: 1rem;
+    }
+    header {
+        padding: 1.2rem 0.5rem 0.5rem 0.5rem;
+    }
+    header h1 {
+        font-size: 1.4rem;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    nav a {
+        margin: 0 0.3rem;
+        font-size: 0.98rem;
+        padding: 0.2rem 0.4rem;
+    }
+    main {
+        max-width: 98vw;
+        padding: 1rem 0.5rem;
+        border-radius: 8px;
+    }
+    #verse-box {
+        padding: 1rem;
+        max-width: 98vw;
+    }
+    section {
+        margin-bottom: 1.2rem;
+    }
+    #ministries ul, #doctrines ul {
+        margin-left: 0.2rem;
+        font-size: 0.98rem;
+    }
+    #prayer-form {
+        max-width: 98vw;
+        padding: 0.2rem;
+    }
+    #prayer-form input, #prayer-form textarea {
+        font-size: 0.98rem;
+        padding: 0.4rem;
+    }
+    button, #prayer-form button {
+        font-size: 0.98rem;
+        padding: 0.4rem 1rem;
+    }
+    footer {
+        font-size: 0.95rem;
+        padding: 0.7rem;
+        border-radius: 0 0 8px 8px;
+        margin-top: 1rem;
+    }
+    /* Logo responsive */
+    #animated-book-logo, #animated-bible-logo, .logo-container img {
+        width: 90vw !important;
+        height: auto !important;
+        max-width: 160px;
+        display: block;
+        margin: 0 auto 1rem auto;
+    }
 }
